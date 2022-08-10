@@ -1,0 +1,28 @@
+[package]
+name = "actix-sqlx-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dependencies.actix-web]
+version = "4"
+
+[dependencies.actix-cors]
+version = "0.6.1"
+
+[dependencies.serde]
+version = "1.0.138"
+features = ["derive"]
+
+[dependencies.sqlx]
+version = "0.5"
+features = ["runtime-actix-rustls", "postgres", "time", "chrono"]
+
+[dependencies.serde_json]
+version = "1"
+
+[dependencies.dotenv]
+version = "0.15.0"
